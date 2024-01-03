@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href = "mediaqueries.css">
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class = "logo">Janice Chung</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#experience">Experience</a></li>
+                <li><a href = "#projects">Projects</a></li>
+                <li><a href = "#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id = "hamburger-nav">
+        <div class = "logo">Janice Chung</div>
+        <div class = "hamburger-menu">
+            <div class = "hamburger-icon" onclick = "toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class = "menu-links">
+            <li><a href = "#about" onclick = "toggleMenu()">About</a></li>
+            <li><a href = "#experience" onclick = "toggleMenu()">Experience</a></li>
+            <li><a href = "#projects" onclick = "toggleMenu()">Projects</a></li>
+            <li><a href = "#contact" onclick = "toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+    </nav>
+    <section id = "profile">
+        <div class = "section__pic-container">
+            <img src = "./pictures/profile-modified.png" alt = "Janice Chung profile picture">
+        </div>
+        <div class = "section__text">
+            <p class = "section__text__p1">Hello, I'm </p>
+            <h1 class = "main-title">Janice Chung</h1>
+            <p class = "section__text__p2">I am an undergraduate at Vanderbilt University interested in full-stack web development, artificial intelligence, and computer vision. Let's connect!</p>
+            <div class = "btn-container">
+                <button class = "btn btn-color-2" 
+                    onclick = "window.open('./pictures/resume.pdf')">
+                    Resume
+                </button>
+                <button class = "btn btn-color-1" 
+                onclick = "location.href ='./#contact'">
+                Contact Info
+            </button>
+            </div>
+            <div id = "socials-container">
+                <img src = "./pictures/linkedin.png" alt = "My Linkedin profile"
+                class = "icon" onclick = "location.href = 'https://linkedin.com/in/janiceechung'">
+                <img src = "./pictures/github.png" alt = "My Github profile"
+                class = "icon" onclick = "location.href = 'https://github.com/janicechungg'">
+            </div>
+        </div>
+    </section>
+    <section id = "about">
+        <p class = "section__text__p1">Get To Know More</p>
+        <h1 class = "title">About Me</h1>
+        <div class = "section-container">
+            <div class = "about-details-container">
+                <div class = "about-containers">
+                    <div class = "details-container">
+                        <img src = "./pictures/experience.png"
+                        alt = "experience icon"
+                        class = "icon"/>
+                        <h3 class = "about-title-container">Awards</h3>
+                        <p class = "about-details-container-2">QuestBridge Scholar <br/>
+                            Dean's List (3.8 / 4.0 GPA)
+                            
+                        </p>
+                    </div>
+                    <div class = "details-container">
+                        <img src = "./pictures/education.png"
+                        alt = "education icon"
+                        class = "icon"/>
+                        <h3 class = "about-title-container">Education</h3>
+                        <p class = "about-details-container-2">Undergraduate at Vanderbilt University <br/>
+                            Majors: Computer Science & Applied Mathematics <br/>
+                            Minor: Engineering Management
+                        </p>
+                    </div>
+                </div>
+                <div class = "text-container">
+                    <p>Technology is the catalyst of improving our lives. I'm passionate about integrating artificial intelligence into our daily lives, not to replace our work, but to aid us. My interests outside of academics lie in nutrition, reading, and music. Reach out! I'm open to any conversation :]</p>
+                </div>
+            </div>
+        </div>
+        <img src = "./pictures/arrow.png" alt = "Arrow icon" class = "icon arrow" onclick = "location.href = './#experience'">
+    </section>
+    <section id = "experience">
+        <p class = "section__text__p1">Explore My</p>
+        <h1 class = "title">Skills</h1>
+        <div class = "experience-details-container">
+            <div class = "about-containers">
+                <div class = "details-container">
+                    <h2 class = "experience-sub-title">Languages</h2>
+                    <div class = "article-container">
+                        <article>
+                            <img src = "./pictures/checkmark.png" alt = "Experience icon"
+                            class = "icon"/>
+                            <div>
+                                <h3 class = "experience-title-container">Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "./pictures/checkmark.png" alt = "Experience icon"
+                            class = "icon"/>
+                            <div>
+                                <h3 class = "experience-title-container">Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "./pictures/checkmark.png" alt = "Experience icon"
+                            class = "icon"/>
+                            <div>
+                                <h3 class = "experience-title-container">JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "./pictures/checkmark.png" alt = "Experience icon"
+                            class = "icon"/>
+                            <div>
+                                <h3 class = "experience-title-container">CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "./pictures/checkmark.png" alt = "Experience icon"
+                            class = "icon"/>
+                            <div>
+                                <h3 class = "experience-title-container">JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "./pictures/checkmark.png" alt = "Experience icon"
+                            class = "icon"/>
+                            <div>
+                                <h3 class = "experience-title-container">HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class = "details-container">
+                    <h2 class = "experience-sub-title">Frameworks</h2>
+                    <div class = "article-container">
+                        <article>
+                            <img src = "./pictures/checkmark.png" alt = "Experience icon"
+                            class = "icon"/>
+                            <div>
+                                <h3 class = "experience-title-container">React.js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "./pictures/checkmark.png" alt = "Experience icon"
+                            class = "icon"/>
+                            <div>
+                                <h3 class = "experience-title-container">Node.js</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "./pictures/checkmark.png" alt = "Experience icon"
+                            class = "icon"/>
+                            <div>
+                                <h3 class = "experience-title-container">Tailwind CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src = "./pictures/checkmark.png" alt = "Experience icon"
+                            class = "icon"/>
+                            <div>
+                                <h3 class = "experience-title-container">Express</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src = "./pictures/arrow.png" alt = "Arrow icon" class = "icon arrow" onclick = "location.href = './#projects'">
+    </section>
+    <section id = "projects">
+        <p class = "section__text__p1">Here are my</p>
+        <h1 class = "title">Projects</h1>
+        <div class = "experience-details-container">
+            <div class = "about-containers">
+            <div class = "details-container color-container">
+                <div class = "article-container">
+                <img src = "./pictures/TimelessTastes.jpg" alt = "Timeless Taste"
+                class = "project-img"></div>
+                <h2 class = "experience-sub-title project-title">Timeless Taste</h2>
+                <div class = "btn-container">
+                    <button class = "btn btn-color-2 project-btn" onclick = "location.href = 'https://devpost.com/software/timeless-taste'">
+                        Devpost
+                    </button>
+                </div>
+            </div>
+            <div class = "details-container color-container">
+                <div class = article-container">
+                <img src = "./pictures/Ekerb.png" alt = "Ekerb"
+                class = "project-img"></div>
+                <h2 class = "experience-sub-title project-title">Ekerb Word Unscrambler Game</h2>
+                <div class = "btn-container">
+                    <button class = "btn btn-color-2 project-btn" onclick = "location.href = 'https://github.com/ChangePlusPlusVandy/change-coding-challenge-2023-janicechungg'">
+                        Github
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <img src = "./pictures/arrow.png" alt = "Arrow icon" class = "icon arrow" onclick = "location.href = './#contact'">
+    </section>
+    <section id = "contact">
+        <p class = "section__text__p1">Get in Touch</p>
+        <h1 class = "title">My Contacts</h1>
+        <div class = "contact-info-upper-container">
+            <div class = "contact-info-container">
+                <img src = "./pictures/email.png"
+                alt = "Email icon"
+                class = "icon contact-icon email-icon">
+                <p><a href = "mailto:janiceechung@gmail.com">janiceechung@gmail.com</a></p>
+            </div>
+        </div>
+        <div class = "contact-info-upper-container">
+            <div class = "contact-info-container">
+                <img src = "./pictures/linkedin.png"
+                alt = "Linkedin icon"
+                class = "icon contact-icon">
+                <p><a href = "https://linkedin.com/in/janiceechung">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class = "nav-links-container">
+                <ul class="nav-links">
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#experience">Experience</a></li>
+                    <li><a href = "#projects">Projects</a></li>
+                    <li><a href = "#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Janice Chung. All Rights Reserved.</p>
+    </footer>
+    <script src = "script.js"></script>
+</body>
+</html>
